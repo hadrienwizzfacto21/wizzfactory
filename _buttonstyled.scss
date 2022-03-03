@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+$darkgreen: #058499;
+$white    : #FFF;
+$black : #000;
+$lightgrey : #d3d3d3;
+
+
+
+/* CUSTOM */
+.btn-small {
+    width           : 295px;
+    height          : 56px;
+    border          : 1px Solid #FFF;
+    font-weight     : bold;
+    letter-spacing  : 0.3rem;
+    border-radius   : 5px;
+    background-color: $darkgreen;
+    text-transform  : uppercase;
+    color           : $white;
+    font-family     : Roboto;
+
+    &.btn-small:hover {
+        color           : $darkgreen;
+        background-color: $white;
+        border          : solid 1px;
+
+    }
+}
+
+    .btn-medium {
+        width           : 450px;
+        height          : 75px;
+        border          : 1px Solid #FFF;
+        font-weight     : bold;
+        letter-spacing  : 0.3rem;
+        border-radius   : 5px;
+        background-color: $darkgreen;
+        text-transform  : uppercase;
+        color           : $white;
+        font-family     : Roboto;
+
+        &.btn-medium:hover {
+            color           : $darkgreen;
+            background-color: $white;
+            border          : solid 1px;
+    
+        }
+    }
+    .btn-round {
+    color : $white;
+
+    width: 215px;
+    height: 54px;
+    left: 80px;
+    top: 1507px;
+    background-color: #10869B;
+    /* Note: backdrop-filter has minimal browser support */
+    border-radius: 100px;
+    border: solid 1px $white;
+    text-transform: uppercase;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    font-family: Roboto;
+    letter-spacing  : 0.3rem;
+    font-weight     : bold;
+
+    .fa {
+     
+        color: $lightgrey  !important;
+      
+    }    
+
+    
+    &.btn-round:hover {
+        color           : $darkgreen;
+        background-color: $white;
+        border          : solid 1px;
+      
+    }
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+

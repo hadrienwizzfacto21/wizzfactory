@@ -1,0 +1,86 @@
+$darkgreen: #058499;
+$lightgrey: #FFF;
+$burgundy: #531635;
+$darkgrey:  #333E40;
+$white: white;
+$grey: #6F7482;
+$whitegrey: rgb(222, 225, 228);
+
+
+
+label {
+color: $grey !important; 
+
+}
+/* INPUT TYPE */
+#input1  {
+
+
+    width: 365px !important;
+    height: 34px !important;
+	background-color: $white ;
+    border: 1px solid #000000!important;
+    border-radius: 4px!important;
+	
+}
+#input2  {
+
+
+    width: 345px !important;
+    height:  55px !important;
+
+	
+}
+
+
+
+
+
+/* INPUT COLOR */
+input.input-primary {
+	background-color: $whitegrey !important;
+	border-color: $darkgrey !important;
+}
+
+
+input.input-tertiary {
+    color: #fff;
+    background-color: $darkgreen !important;
+    border-color: $darkgreen !important;
+}
+
+
+/* SUBMIT INPUT */
+
+input[type="submit"].input-primary {
+    color: #FFF;
+    background-color: $darkgreen !important;
+    border-color: $darkgreen !important;
+}
+
+input[type="reset"].input-primary {
+color: #fff;
+background-color: $darkgreen !important;
+border-color: $darkgreen !important;
+}
+input[type="button"].input-primary {
+    color: #fff;
+    background-color: $lightgrey !important ;
+
+}
+
+input[type="submit"].input-secondary {
+	color: #FFF;
+	background-color: $burgundy !important;
+	border-color: $burgundy !important;
+}
+input[type="reset"].input-secondary {
+	color: #FFF;
+	background-color: $burgundy !important;
+	border-color: $burgundy !important;
+}
+input[type="button"].input-secondary {
+	color: #FFF;
+	background-color: $burgundy !important;
+	border-color: $burgundy !important;
+}
