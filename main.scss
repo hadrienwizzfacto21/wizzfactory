@@ -1,3 +1,5 @@
+ /* USED LIBS */
+ 
  @import "_button.scss";
  @import "_buttonstyled.scss";
  @import "_contactstyled.scss";
@@ -5,5 +7,26 @@
  @import "_inputstyled.scss";
  @import "_iconstyled.scss";
  @import "_normalize.scss";
+
+
+ /* EXTRA UNUSED LIBS */
+
+@import "libs/layout.scss";
+@import "libs/footer.scss";
+@import "libs/navhero.scss";
+@import "libs/hero-about.scss";
+@import "libs/cards-testicommits.scss";
+@import "livs/folio-lightboxwhitepaper.scss";
+@import "libs/timelinefigures.scss";
+@import "libs/responsive.scss";
+@import "libs/contactform.scss";
  
- 
+p {
+    color: #000 !important;
+}
+
+a {
+    text-decoration: none !important;
+    text-transform: uppercase;
+}
+

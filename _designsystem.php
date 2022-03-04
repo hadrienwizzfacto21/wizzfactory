@@ -160,7 +160,7 @@
 
 <div class="six columns">
         <form>
-            <h1 class="formtitle">Vos coordonnées</h1>
+            <h1 class="formtitle-center">Vos coordonnées</h1>
             <div class="row">
                 <label for="exampleEmailInput">Votre mail </label>
                 <input id="input1" class="u-full-width" type="email" placeholder="test@mailbox.com" id="exampleEmailInput">
@@ -191,41 +191,35 @@
                 <span class="label-body">Je certifie avoir au moins 18 ans*</span>
             </label>
 
-            <div class="container">
+
                 <button href="#" class="button button-secondary">ENVOYER</button>
-            </div>
+     
         <form> 
          <div class="row">
-             <p>
-             [ XXXX ] collecte et traite vos données personnelles recueillies par ce formulaire afin de gérer votre participation au jeu. 
-             Pour en savoir plus sur la gestion de vos données personnelles et pour exercer vos droits, merci de cliquer ici.
-             </p>
-
-        
+             <p id="sm-text" >
+             [ XXXX ] collecte et traite vos données personnelles recueillies par ce 
+             formulaire afin de gérer votre participation au jeu. 
+             Pour en savoir plus sur la gestion de vos données personnelles
+              et pour exercer vos droits, merci de cliquer ici.
+             </p> 
          </div>
 
-        <hr></hr>
-
-         <div class="row">
-             <ul>
-                 <li>Règlement |</li>
-                 <li>Mentions légales |</li>
-                 <li>Politique de confidentialité |</li>
-                 <li>Préférences</li>
-             </ul>          
-          
-         </div>
-            
-        
-
+        <hr></hr> 
+             <div class="example">       
+                    <a href="#"  class="link" >Règlement |</a>
+                    <a href="#"  class="link" >Mentions légales |</a>
+                    <a  href="#"   class="link" >Politique de confidentialité |</a>
+                    <a   href="#"  class="link" >Préférences</a>
+             </div>        
     </div>
 </div>
 <div class="container"  style="background-color: black; ">
 <div class="six columns">
         <form>
             <div class="row">
-                <label for="exampleEmailInput">Votre mail </label>
-                <input id="input1" class="u-full-width" type="email" placeholder="test@mailbox.com" id="exampleEmailInput">
+                <h1 class="formtitle">Vos coordonnées</h1>
+                    <label for="exampleEmailInput">Votre mail </label>
+                    <input id="input1" class="u-full-width" type="email" placeholder="test@mailbox.com" id="exampleEmailInput">
             </div>
 
             <label for="exampleRecipientInput">Votre domaine d'activité </label>
@@ -252,10 +246,8 @@
                 <input type="checkbox">
                 <span class="label-body">Je certifie avoir au moins 18 ans*</span>
             </label>
-
-            <div class="container">
                 <button href="#" class="button button-secondary">ENVOYER</button>
-            </div>
+           
         <form>   
     </div>
 </div>
@@ -293,13 +285,44 @@
                 <span class="label-body">Je certifie avoir au moins 18 ans*</span>
             </label>
 
-            <div class="container">
+           
                 <button href="#" class="button button-secondary">ENVOYER</button>
-            </div>
+   
         <form>   
     </div>  
 </div>
 
+<main class="contact">
+    <div class="contact-form">
+        <div class="container">
+            <div class="row">
+                    <h2>Vous avez un projet ?</h2>
+                    <p>Envoyez-nous un message, nous vous répondrons au plus vite !</p>
+
+                    <form >
+                        <div class="form-control">
+                            <input class="u-full-width" type="text" name="nom" placeholder="Nom" required=""/>
+                        </div>
+                        <div class="form-control">
+                            <input class="u-full-width" type="email" name="email" placeholder="Adresse e-mail" required=""/>
+                        </div>
+                        <div class="form-control">
+                            <input class="u-full-width" type="text" name="telephone" placeholder="Numéro de téléphone"/>
+                        </div>
+                        <textarea class="u-full-width" name="texte" placeholder="Message" required=""></textarea>
+
+                        <div class="form-control">
+                            <p>Saississez le code suivant ci-dessous pour envoyer votre email : <span style="color:green;font-weight:bold">3178</span></p>
+                            <input class="u-full-width" type="text" name="code" placeholder="Code de validation" required=""/>
+                        </div>
+
+                        <input class="button button-primary" type="submit" value="Envoyer"/>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
 
 
 

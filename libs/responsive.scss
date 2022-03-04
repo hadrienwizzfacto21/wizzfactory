@@ -1,0 +1,188 @@
+@media (min-width: 1000px) {
+    .navbar {
+        .container {
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+        #navmenu-button {
+            display: none;
+        }
+    }
+
+    .navbar__menu {
+        column-gap: 3rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 0;
+        width: auto;
+        max-height: 500px;
+        li {
+            margin-bottom: 0;
+            border-bottom: 0;
+        }
+    }
+    .navbar__tel {
+        position: static;
+        margin: 0;
+    }
+    .white-paper__photo-container {
+        display: block;
+    }
+}
+
+@media (min-width: 550px) {
+    .footer__lower {
+        .row {
+            display: flex;
+            align-items: stretch;
+        }
+    }
+    .section-title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &::before {
+            display: block;
+        }
+        &::after {
+            display: block;
+        }
+    }
+    .hero__banner {
+        margin: 10vh 0;
+    }
+    .productions__prev {
+        color: $night;
+        left: -5rem;
+    }
+
+    .productions__next {
+        color: $night;
+        right: -5rem;
+    }
+    .services-timeline {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .services-grid {
+        .four.columns {
+            width: 33.33%;
+            height: 100%;
+            &:nth-child(3) {
+                .services-grid__item {
+                    border-right: 0;
+                }
+            }
+        }
+    }
+    .services-grid__item {
+        border-right: 1px dashed #fff;
+    }
+    .row {
+        &:last-child {
+            .services-grid__item {
+                border-bottom: 0;
+            }
+        }
+    }
+    .services-about {
+        .row {
+            flex-direction: row;
+            align-items: stretch;
+            &:nth-child(2n) {
+                flex-direction: row;
+            }
+        }
+    }
+    .home {
+        .section-title {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            &::before {
+                display: block;
+            }
+        }
+    }
+}
+
+@media (min-width : 750px) {
+    .hero__banner {
+        margin: 15vh 0;
+    }
+    .renovation {
+        .about-company {
+            h3 {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                &::before {
+                    display: block;
+                }
+                &::after {
+                    display: block;
+                }
+            }
+        }
+    }
+    .gros-oeuvre {
+        .about-company {
+            h3 {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                &::before {
+                    display: block;
+                }
+                &::after {
+                    display: block;
+                }
+            }
+        }
+    }
+    .second-oeuvre {
+        .about-company {
+            h3 {
+                display: flex; 
+                align-items: center;
+                justify-content: space-between;
+                &::before {
+                    display: block;
+                }
+                &::after {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    .services-timeline {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .services-timeline__item {
+        text-align: left;
+        border-left: 1px dashed $night;
+        border-top: 1px dashed $night;
+    }
+
+    .services-timeline__number {
+        display: inline-flex;
+    }
+
+    .services-timeline__icon {
+        margin: 9rem 0 14rem -3.35vw;
+    }
+
+    .portfolio__menu {
+        display: flex;
+        column-gap: 3rem;
+        justify-content: center;
+    }
+
+    .about-gros-oeuvre__main {
+        display: flex;
+        align-items: center;
+        column-gap: 2rem;
+    }
+}

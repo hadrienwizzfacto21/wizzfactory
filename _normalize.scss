@@ -2,17 +2,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 
-li {
-    list-style: none;
+$darkgreen: #058499;
+$white    : #FFF;
+$black : #000;
+$lightgrey : #d3d3d3;
+
+
+
+a {
+    color: #000 !important;
 }
 
 
+
+
 .container {
-    border: none !important;
+    border: 1px solid #000;
+   
     
 }
 
 .formtitle {
+    text-transform: uppercase;
+    font-family: Bebas Neue;
+    color: $white;
+}
+
+.formtitle-black {
+    text-transform: uppercase;
+    font-family: Bebas Neue;
+    color: $black;
+}
+
+
+.formtitle-center {
     text-transform: uppercase;
     font-family: Bebas Neue;
     font-size: 3rem;
@@ -23,4 +46,9 @@ li {
 
 .text {
     font-size: smaller;
+}
+
+
+#sm-text {
+    font-size: 10px;
 }

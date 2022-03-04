@@ -350,15 +350,27 @@ fa* {
   color: #000 !important;
 }
 
-li {
-  list-style: none;
+a {
+  color: #000 !important;
 }
 
 .container {
-  border: none !important;
+  border: 1px solid #000;
 }
 
 .formtitle {
+  text-transform: uppercase;
+  font-family: Bebas Neue;
+  color: #FFF;
+}
+
+.formtitle-black {
+  text-transform: uppercase;
+  font-family: Bebas Neue;
+  color: #000;
+}
+
+.formtitle-center {
   text-transform: uppercase;
   font-family: Bebas Neue;
   font-size: 3rem;
@@ -368,4 +380,18 @@ li {
 
 .text {
   font-size: smaller;
+}
+
+#sm-text {
+  font-size: 10px;
+}
+
+/* EXTRA LIBS */
+p {
+  color: #000 !important;
+}
+
+a {
+  text-decoration: none !important;
+  text-transform: uppercase;
 }/*# sourceMappingURL=main.css.map */

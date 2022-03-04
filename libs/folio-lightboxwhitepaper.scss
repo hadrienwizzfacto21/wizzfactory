@@ -1,0 +1,167 @@
+.portfolio__menu {
+    display: block;
+    list-style: none;
+    padding: 0;
+    a {
+        color: $night;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-weight: 500;
+        &:after {
+            margin: 3px auto 0 auto;
+            content: '';
+            background: transparent;
+            width: 50%;
+            height: 2.5px;
+            display: block;
+            transform: scale(0);
+            transition: all 0.1s;
+        }
+        &:hover {
+            &:after {
+                transform: scaleX(1);
+                background: $night;
+            }
+        }
+    }
+}
+
+.portfolio__thumbnail {
+    position: relative;
+    margin-bottom: 3rem;
+    padding: 0;
+    overflow: hidden;
+    display: block;
+    transition: all .3s linear;
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    &:hover {
+        .portfolio__thumbnail-overlay {
+            transform: sacleY(1);;
+        }
+        .portfolio__thumbnail-button {
+            img {
+                width: 2rem;
+                height: auto;
+            }
+        }
+        
+        .portfolio__thumbnail.visuallyHidden {
+            opacity: 0;
+        }
+        .portfolio__thumbnail.hidden {
+            display: none;
+        }
+        .portfolio__thumbnail-overlay {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: .8rem;
+            background: rgba(0, 0, 0, 0.8);
+            color: #FFF;
+            padding: 1rem;
+            transform: scaleY(0);
+            transform-origin: bottom;
+            transition: all .3s;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            a {
+                display: inline-flex;
+                align-items: center;
+                color: #fff;
+                text-decoration: none;
+            }
+        }
+        .portfolio__lightbox {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0.9);
+            background: #fff;
+            max-width: 700px;
+            width: 100%;
+            height: 100%;
+            z-index: 5;
+            opacity: 0;
+            pointer-events: none;
+            border-radius: 3px;
+            padding: 0 5px 5px 5px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+        .portfolio__lightbox-close {
+            position: absolute;
+            top: 2rem;
+            right: 2rem;
+            cursor: pointer;
+        }
+        .portfolio__lightbox.show {
+            opacity: 1;
+            pointer-events: auto;
+            transform: translate(-50%, -50%) scale(1);
+            transition: all 0.3s ease;
+        }
+        
+        .white-paper {
+            background: #2D445D;
+            color: #FFF;
+            padding: 5% 0;
+            .container {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+        }
+        .white-paper__content {
+            width: 90%;
+        }
+        .white-paper__title {
+            margin-bottom: 0;
+            color: #FFF;
+            text-align: left;
+            font-size: 4.8rem;
+            &:before {
+                background-color: #fff;
+                content: "";
+                display: none;
+                height: 2px;
+                position: absolute;
+                vertical-align: middle;
+                width: 50%;
+            }
+            &:after {
+                background-color: #fff;
+                content: "";
+                display: none;
+                height: 2px;
+                position: absolute;
+                vertical-align: middle;
+                width: 50%;
+                margin-top: 0;
+            }
+        }
+        .white-paper__subtitle {
+            font-weight: bold;
+            font-size: 2rem;
+        }
+        .white-paper__photo-container {
+            display: none;
+            width: 15rem;
+            height: 15rem;
+            min-width: 15rem;
+            min-height: 15rem;
+            border-radius: 50%;
+            border: 3px solid #FFF;
+        }
+        .white-paper__photo {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+        }
+     }
+ }
+        
