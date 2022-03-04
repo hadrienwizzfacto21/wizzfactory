@@ -1,6 +1,8 @@
 /* most USED VARIABLES */
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 .button {
   list-style: none;
   text-decoration: none;
@@ -80,9 +82,9 @@ button.button-tertiary {
   border: solid 1px;
 }
 
-.btn-medium {
-  width: 450px;
-  height: 75px;
+.btn-large {
+  width: 350px;
+  height: 45px;
   border: 1px Solid #FFF;
   font-weight: bold;
   letter-spacing: 0.3rem;
@@ -92,7 +94,7 @@ button.button-tertiary {
   color: #FFF;
   font-family: Roboto;
 }
-.btn-medium.btn-medium:hover {
+.btn-large.btn-medium:hover {
   color: #058499;
   background-color: #FFF;
   border: solid 1px;
@@ -131,8 +133,12 @@ label {
 #input1 {
   width: 365px !important;
   height: 34px !important;
-  background-color: white;
-  border: 1px solid #000000 !important;
+  border-radius: 4px !important;
+}
+
+#input1-sm {
+  width: 300px !important;
+  height: 40px !important;
   border-radius: 4px !important;
 }
 
@@ -143,17 +149,17 @@ label {
 
 /* INPUT COLOR */
 input.input-primary {
+  color: #333E40;
   background-color: #dee1e4 !important;
-  border-color: #333E40 !important;
 }
 
 input.input-tertiary {
-  color: #fff;
-  background-color: #058499 !important;
-  border-color: #058499 !important;
+  color: white;
+  background-color: #6F7482 !important;
+  border-color: #333E40 !important;
 }
 
-/* SUBMIT INPUT */
+/* EXTRA BOILERPLATE  */
 input[type=submit].input-primary {
   color: #FFF;
   background-color: #058499 !important;
@@ -340,6 +346,26 @@ div.omrs-input-group {
   background: var(--omrs-color-bg-low-contrast);
 }
 
-.fa {
-  color: white;
+fa* {
+  color: #000 !important;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  border: none !important;
+}
+
+.formtitle {
+  text-transform: uppercase;
+  font-family: Bebas Neue;
+  font-size: 3rem;
+  text-align: center;
+  padding-right: 80px;
+}
+
+.text {
+  font-size: smaller;
 }/*# sourceMappingURL=main.css.map */

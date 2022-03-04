@@ -2,8 +2,10 @@ $darkgreen: #058499;
 $lightgrey: #FFF;
 $burgundy: #531635;
 $darkgrey:  #333E40;
+$softgrey:  #4c585a;
 $white: white;
 $grey: #6F7482;
+$whitegrey: #E9F0FB;
 $whitegrey: rgb(222, 225, 228);
 
 
@@ -14,21 +16,23 @@ color: $grey !important;
 }
 /* INPUT TYPE */
 #input1  {
-
-
     width: 365px !important;
     height: 34px !important;
-	background-color: $white ;
-    border: 1px solid #000000!important;
     border-radius: 4px!important;
-	
 }
+
+
+#input1-sm {
+    width: 300px !important;
+    height: 40px !important;
+    border-radius: 4px!important;
+}
+
+
+
 #input2  {
-
-
     width: 345px !important;
     height:  55px !important;
-
 	
 }
 
@@ -38,19 +42,20 @@ color: $grey !important;
 
 /* INPUT COLOR */
 input.input-primary {
+    color: $darkgrey;
 	background-color: $whitegrey !important;
-	border-color: $darkgrey !important;
+	
 }
 
 
 input.input-tertiary {
-    color: #fff;
-    background-color: $darkgreen !important;
-    border-color: $darkgreen !important;
+    color: $white ;
+    background-color: $grey!important;
+    border-color: $darkgrey !important;
 }
 
 
-/* SUBMIT INPUT */
+/* EXTRA BOILERPLATE  */
 
 input[type="submit"].input-primary {
     color: #FFF;
